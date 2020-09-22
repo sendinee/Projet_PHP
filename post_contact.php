@@ -5,10 +5,6 @@
         $errors['name'] = "Vous n'avez pas renseigné votre nom";
     }
 
-    if(!array_key_exists('name', $_POST) || $_POST['name'] == ''){
-        $errors['name'] = "Vous n'avez pas renseigné votre prenom";
-    }
-
     if(!array_key_exists('email', $_POST) || $_POST['email'] == ''){
         $errors['email'] = "Vous n'avez pas renseigné votre email";
     }
