@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
    <div class="container">
-      <a class="navbar-brand" href="list.php">Historique E-mail</a>
+      <a class="navbar-brand" href="list.php">Historique (E-mail)</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,15 +29,15 @@
               <form action="functions/storeMessage.php" method="post">
           <div class="form-group">
             <label for="fillname">Nom & prénom :</label>
-            <input type="text" name="fullname" id="fullname" class="form-control " placeholder="Nom & prénom" value="">
+            <input type="text" name="fullname" id="fullname" class="form-control " placeholder="ALexis DUPONT" value="">
           </div>
           <div class="form-group">
             <label for="email">Email :</label>
-            <input type="email" name="email" id="email" class="form-control " placeholder="Adresse mail" value="">
+            <input type="email" name="email" id="email" class="form-control " placeholder="abc@xyz.com" value="">
           </div>
           <div class="form-group">
             <label for="content">Message :</label>
-            <textarea name="content" id="content" cols="30" rows="10" class="form-control " placeholder="écrire un message"></textarea>
+            <textarea name="content" id="content" cols="30" rows="10" class="form-control " placeholder="Ecrire un message..."></textarea>
           </div>
           <button type="submit" name="send" class="btn btn-primary float-right">Envoyer</button>
         </form>
