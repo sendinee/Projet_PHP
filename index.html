@@ -9,7 +9,18 @@
 <nav class="navbar navbar-inverse navbar-dark navbar-fixed-top bg-primary" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Histotique</a>
+            <a class="navbar-brand" href="#list.php">Historique</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navabar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#index.php"> Ecrire un e-mail</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>  
@@ -20,28 +31,28 @@
             <div class="col-xs-6">
                 <div class="form-group">
                     <label>Votre nom</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Dupont" value="">
+                    <input type="text" name="name" class="form-control" id="inputname">
                 </div>
             </div>
             <div class="col-xs-6">
                 <div class="form-group">
                     <label>Votre prénom</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Alexis" value="">
+                    <input type="text" name="name" class="form-control" id="inputname">
                 </div>
             </div>
             <div class="col-xs-12">
                 <div class="form-group">
                     <label for="inputemail">Votre mail</label>
-                    <input type="text" name="email" class="form-control" id="email" placeholder="abc@xyz.com" value="">
+                    <input type="text" name="email" class="form-control" id="inputemail">
                 </div>
             </div>
             <div class="col-xs-12">
                 <div class="form-group">
                     <label for="inputmessage">Votre message</label>
-                    <textarea id="inputmessage" name="message" class="form-control" placeholder="Votre message..." value=""></textarea>
+                    <textarea id="inputmessage" name="message" class="form-control"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary float-right">Envoyer</button>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
     </div>
 </div>
