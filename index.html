@@ -39,7 +39,7 @@
     <div class="alert alert-danger">
         <?= implode('<br>', $_SESSION['errors']); ?>
     </div>
-    <?php endif; ?>
+    <?php unset($_SESSION['errors']); endif; ?>
 
         <form action="post_contact.php" method="POST">
             <div class="col-xs-6">
@@ -49,12 +49,6 @@
                 </div>
             </div>
             <div class="col-xs-6">
-                <div class="form-group">
-                    <label>Votre prénom</label>
-                    <input type="text" name="name" class="form-control" id="inputname">
-                </div>
-            </div>
-            <div class="col-xs-12">
                 <div class="form-group">
                     <label for="inputemail">Votre mail</label>
                     <input type="text" name="email" class="form-control" id="inputemail">
