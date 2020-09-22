@@ -6,40 +6,43 @@
     <title>Formulaire de contact</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-inverse navbar-dark navbar-fixed-top bg-primary" role="navigation">
     <div class="container">
-        <a class="navbar-brand" href="list.php">Historique E-mail</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Écrire un e-mail</a>
-                </li>
-            </ul>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Histotique</a>
         </div>
     </div>
-</nav>  <div class="container">
-    <div class="row mt-5">
-        <div class="col-md-6 offset-md-3">
-            <form action="function/storeMessage.php" method="post">
+</nav>  
+
+<div class="container">
+    <div class="starter-template">
+        <form action="post_contact.php" method="POST">
+            <div class="col-xs-6">
                 <div class="form-group">
-                    <label for="fillname">Nom & Prénom :</label>
-                    <input type="text" name="fullname" id="fullname" class="form-control " placeholder="Alexis Dupont" value="">
+                    <label>Votre nom</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Dupont" value="">
                 </div>
+            </div>
+            <div class="col-xs-6">
                 <div class="form-group">
-                    <label for="email">Email :</label>
-                    <input type="email" name="email" id="email" class="form-control " placeholder="abc@gmail.com" value="">
+                    <label>Votre prénom</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Alexis" value="">
                 </div>
+            </div>
+            <div class="col-xs-12">
                 <div class="form-group">
-                    <label for="content">Message :</label>
-                    <textarea name="content" id="content" cols="30" rows="10" class="form-control " placeholder="écrire un message...."></textarea>
+                    <label for="inputemail">Votre mail</label>
+                    <input type="text" name="email" class="form-control" id="email" placeholder="abc@xyz.com" value="">
                 </div>
-                <button type="submit" name="send" class="btn btn-primary float-right">Envoyer</button>
-            </form>
-        </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <label for="inputmessage">Votre message</label>
+                    <textarea id="inputmessage" name="message" class="form-control" placeholder="Votre message..." value=""></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Envoyer</button>
+        </form>
     </div>
 </div>
 </body>
