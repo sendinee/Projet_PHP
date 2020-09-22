@@ -45,24 +45,29 @@
             <div class="col-xs-6">
                 <div class="form-group">
                     <label>Votre nom</label>
-                    <input type="text" name="name" class="form-control" id="inputname">
+                    <input type="text" name="name" class="form-control" id="inputname" placeholder="Alexis Dupont" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : '';?>">
                 </div>
             </div>
             <div class="col-xs-6">
                 <div class="form-group">
                     <label for="inputemail">Votre mail</label>
-                    <input type="text" name="email" class="form-control" id="inputemail">
+                    <input type="text" name="email" class="form-control" id="inputemail" placeholder="abc@xyz.com" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : '';?>">
                 </div>
             </div>
             <div class="col-xs-12">
                 <div class="form-group">
                     <label for="inputmessage">Votre message</label>
-                    <textarea id="inputmessage" name="message" class="form-control"></textarea>
+                    <textarea id="inputmessage" name="message" class="form-control" placeholder="votre message..." <?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : '';?>></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="btn btn-primary float-right">Envoyer</button>
         </form>
     </div>
 </div>
 </body>
 </html>
+
+<?php
+    unset($_SESSION['inputs']);
+    unset($_SESSION['errors']);
+?>
