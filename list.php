@@ -18,7 +18,7 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav ml-auto">  
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Écrire un e-mail</a>
+            <a class="nav-link" href="index.html">Écrire un e-mail</a>
           </li> 
         </ul> 
       </div>
