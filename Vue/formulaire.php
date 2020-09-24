@@ -12,7 +12,7 @@
 			<div class="col-md-6 offset-md-3">
 				<form action="" method="post">
 					<div class="form-group">
-						<label for="fillname">Nom &amp; prénom :</label>
+						<label for="fillname">Nom &amp; Prénom :</label>
 						<input type="text" name="nom_prenom" id="nom_prenom" class="form-control " placeholder="Nom &amp; prénom" value="" required>
 					</div>
 					<div class="form-group">
@@ -23,14 +23,14 @@
 						<label for="content">Message :</label>
 						<textarea name="texte" id="texte" cols="30" rows="10" class="form-control " placeholder="écrire un message" required></textarea>
 					</div>
-					<button type="reset" name="reset" value="reset" class="btn btn-white ml-1 border-dark border float-right">Reset</button>
-					<button type="submit" name="Valider" value="Valider" class="btn btn-primary border border-primary float-right">Envoyer</button>
+					<button type="Reset" name="Reset" value="Reset" class="btn btn-white ml-1 border-dark border float-right">Reset</button>
+					<button type="Submit" name="Valider" value="Valider" class="btn btn-primary border border-primary float-right">Envoyer</button>
 				</form>
 			</div>
 		</div>
 	</div>
 	<?php	
-		require_once("Controleur/controlleur.php");
+		require_once("Controleur/controleur.php");
 		$unControleur = new Controleur("localhost","mail","root","");
 		if(isset($_POST['Valider']))
 		{
